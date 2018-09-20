@@ -19,6 +19,30 @@ img {
   color: #fe4844;
 }
 
+button {
+  background-color: #b6211e;
+  width: 289px;
+  height: 58px;
+  border: none;
+  color: #ffffff;
+}
+button:focus {
+  outline: none;
+}
+.header__button_cal {
+  background-color: #676263;
+  width: 189px;
+  height: 31px;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #413939;
+}
+.header__button_cal:hover {
+  background-color: #b6211e;
+  color: #ffffff;
+}
+
 // main
 header,
 footer {
@@ -29,7 +53,6 @@ footer {
 
 header {
   min-height: 187px;
-  border-top: 1px solid transparent;
 }
 
 .header_top {
@@ -86,7 +109,8 @@ main .content {
 }
 
 .header__slider {
-  margin-top: 50px;
+  max-height: 651px;
+  overflow: hidden;
   .item__text {
     position: absolute;
     top: 0;
@@ -101,6 +125,37 @@ main .content {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+
+.article .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about,
+.sert {
+  .content {
+    flex-direction: row;
+  }
+}
+.popular,
+.metal-doors {
+  .slider__item {
+    width: 190px;
+    height: 375px;
+  }
+  .article__active {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.metal-doors .slider__item {
+  height: 385px;
+  overflow: hidden;
+  img {
+    height: 100%;
   }
 }
 
