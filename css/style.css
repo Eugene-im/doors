@@ -1513,6 +1513,11 @@ footer .second_row .content {
     width: 100%;
   }
 }
+@media (max-width: 1024px) {
+  .header__contacts-col, .header__menu {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   main .content {
     -webkit-box-orient: vertical;

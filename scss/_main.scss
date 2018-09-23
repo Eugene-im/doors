@@ -637,6 +637,12 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .header__contacts-col,.header__menu{
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   main .content {
     flex-direction: column;
