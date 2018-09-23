@@ -819,6 +819,10 @@ li {
   list-style-type: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .red_text {
   color: #fe4844;
 }
@@ -1136,7 +1140,8 @@ header .slider__item {
 }
 
 .about .content,
-.sert .content {
+.sert .content,
+.contacts .content {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1277,6 +1282,9 @@ header .slider__item {
   margin-bottom: 22px;
 }
 
+.supreme .article__header {
+  color: #000000;
+}
 .supreme .article__active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1285,11 +1293,77 @@ header .slider__item {
       justify-content: space-around;
   max-width: 1044px;
   width: 100%;
+  margin: auto;
 }
 .supreme .slider__img {
+  display: inline-block;
   width: 114px;
-  height: 57px;
-  background: url(../img/5-layers.png) 0 0 no-repeat;
+  height: 60px;
+  margin: 25px 0 42px;
+  background: url(../img/5-layers.png) 0 center no-repeat;
+}
+.supreme .slider__text {
+  color: #b5211f;
+  font-size: 24px;
+  text-transform: uppercase;
+  max-width: 216px;
+  margin-bottom: 99px;
+}
+.supreme .slider__item {
+  text-align: center;
+}
+.supreme .car .slider__img {
+  background-position-x: -277px;
+}
+.supreme .best_items .slider__img {
+  background-position-x: -583px;
+}
+.supreme .best_price .slider__img {
+  background-position-x: -893px;
+}
+.supreme .active__text {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+}
+
+.measurements {
+  background: url(../img/Layer-88.png) top center no-repeat;
+  min-height: 552px;
+  padding-top: 55px;
+}
+.measurements .article__header {
+  color: #000000;
+}
+.measurements .article__active {
+  max-width: 788px;
+  margin: 77px auto 0;
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+}
+.measurements .caps {
+  text-transform: uppercase;
+}
+.measurements .red_text {
+  color: #b5211d;
+  font-size: 48px;
+  margin-top: 66px;
+}
+.measurements .active_phones {
+  font-size: 33px;
+  line-height: 40px;
+  margin-top: 45px;
+}
+.measurements .active_phones span {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.contacts .article_right {
+  max-width: 794px;
+  width: 100%;
+  min-height: 451px;
 }
 
 .galery .slick-slide {

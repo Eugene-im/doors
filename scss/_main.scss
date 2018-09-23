@@ -19,6 +19,10 @@ li {
   list-style-type: none;
 }
 
+strong{
+  font-weight: 700;
+}
+
 .red_text {
   color: #fe4844;
 }
@@ -306,7 +310,8 @@ header .slider__item {
 }
 
 .about,
-.sert {
+.sert,
+.contacts {
   .content {
     flex-direction: row;
     justify-content: space-between;
@@ -416,19 +421,87 @@ header .slider__item {
 }
 
 .supreme{
+  .article__header{
+    color: #000000;
+  }
   .article__active{
     display: flex;
     justify-content: space-around;
     max-width: 1044px;
     width: 100%;
+    margin: auto;
   }
   .slider__img{
+    display: inline-block;
     width:114px;
-    height: 57px;
-    background: url(../img/5-layers.png) 0 0 no-repeat;
+    height: 60px;
+    margin: 25px 0 42px;
+    background: url(../img/5-layers.png) 0 center no-repeat;
+  }
+  .slider__text{
+    color: #b5211f;
+    font-size: 24px;
+    text-transform: uppercase;
+    max-width: 216px;
+    margin-bottom: 99px;
+  }
+  .slider__item{
+    text-align: center;
+  }
+  .car .slider__img{
+    background-position-x:-277px; 
+  }
+  .best_items .slider__img{
+    background-position-x:-583px; 
+  }
+  .best_price .slider__img{
+    background-position-x:-893px; 
   }
   .active__text{
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+  }
+}
 
+.measurements{
+  background: url(../img/Layer-88.png) top center no-repeat;
+  min-height: 552px;
+  padding-top: 55px;
+  .article__header{
+    color: #000000;
+  }
+  .article__active{
+    max-width: 788px;
+    margin: 77px auto 0;
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+  }
+  .caps{
+    text-transform: uppercase;
+  }
+  .red_text{
+    color: #b5211d;
+    font-size: 48px;
+    margin-top:66px
+  }
+  .active_phones{
+    font-size: 33px;
+    line-height: 40px;
+    margin-top:45px;
+    span{
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.contacts{
+  .article_right{
+    max-width: 794px;
+    width: 100%;
+    min-height: 451px;
   }
 }
 
