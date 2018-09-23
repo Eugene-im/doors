@@ -175,9 +175,10 @@
                         <div class="article_right">
                             <div class="article__text">
                                 <div class="article__header">магазин</div>
-                                <div class="article__description">Мы предлагаем широкий ассортимент продукции при оптимальном сочетании цены и качества. Приобретая
-                                    продукцию у нас, Вы получаете гарантированное качество продукции и услуг по установке
-                                    дверей. </div>
+                                <div class="article__description">Мы предлагаем широкий ассортимент продукции при оптимальном сочетании цены и качества.
+                                    <br/>
+                                    <br/> Приобретая продукцию у нас, Вы получаете гарантированное качество продукции и услуг
+                                    по установке дверей. </div>
                             </div>
                             <div class="article__active">
                                 <img src="./img/Layer_19.png" alt="">
@@ -209,6 +210,21 @@
                                 <div class="slider__item">
                                     <img src="./img/Layer_22.png" alt="">
                                 </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_21.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_22.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_23.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_21.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_22.png" alt="">
+                                </div>
                             </div>
                             <button class="button button_light">Смотреть все фото</button>
                         </div>
@@ -224,51 +240,57 @@
                         </div>
                         <div class="article__active">
                             <nav class="article__tab">
-                                <li class="tab_mass">
-                                    <div class="tab__title">массив</div>
-                                    <div class="tab__slider">
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                    </div>
+                                <li>
+                                    <label for="tab-1" class="article__text">массив</label>
                                 </li>
-                                <li class="tab_shpon">
-                                    <div class="tab__title">шпон</div>
-                                    <div class="tab__slider">
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                    </div>
+                                <li>
+                                    <label for="tab-2" class="article__text">шпон</label>
                                 </li>
-                                <li class="tab_eco-shpon">
-                                    <div class="tab__title">эко-шпон</div>
-                                    <div class="tab__slider">
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                        <div class="slider__item">
-                                            <img src="./img/Layer_61.png" alt="">
-                                        </div>
-                                    </div>
+                                <li>
+                                    <label for="tab-3" class="article__text">эко-шпон</label>
                                 </li>
                             </nav>
-                            <button class="button button_light">Смотреть все фото</button>
+
+                            <input id="tab-1" type="radio" name="tab" checked>
+                            <div class="tab_mass tab__slider">
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                            </div>
+
+                            <input id="tab-2" type="radio" name="tab">
+                            <div class="tab_shpon tab__slider">
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                            </div>
+
+                            <input id="tab-3" type="radio" name="tab">
+                            <div class="tab_eco-shpon tab__slider">
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </div>
+                            </div>
                         </div>
+                        <!-- <button class="button button_light">Смотреть все фото</button> -->
                     </div>
                 </div>
                 <div class="article popular">
@@ -306,33 +328,69 @@
                             <div class="article__header">металлические двери</div>
                             <div class="article__description">В нашем ассортименте представлено более 100 моделей металличеких дверей в наличии и под заказ</div>
                         </div>
-                        <button class="button button_strong">новые модели</button>
-                        <button class="button button_strong">популярные модели</button>
+                        <!-- <button class="button button_strong">популярные модели</button> -->
                         <div class="article__active">
-                            <div class="slider__item">
-                                <img src="./img/Layer-115.png" alt="">
+
+                            <nav class="article__tab">
+                                <li>
+                                    <label for="tab-1" class="button button_strong">новые модели</label>
+                                </li>
+                                <li>
+                                    <label for="tab-2" class="button button_strong">популярные модели</label>
+                                </li>
+
+                            </nav>
+
+                            <input id="tab-1" type="radio" name="tab" checked>
+                            <div class="active__item new-model">
+                                <div class="slider__item">
+                                    <img src="./img/Layer-115.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-116.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-118.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-129.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-132.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-128.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider__item">
-                                <img src="./img/Layer-116.png" alt="">
+
+                            <input id="tab-2" type="radio" name="tab">
+                            <div class="active__item popular-model">
+                                <div class="slider__item">
+                                    <img src="./img/Layer-116.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-115.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-129.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-118.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-132.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer-128.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider__item">
-                                <img src="./img/Layer-118.png" alt="">
-                            </div>
-                            <div class="slider__item">
-                                <img src="./img/Layer-129.png" alt="">
-                            </div>
-                            <div class="slider__item">
-                                <img src="./img/Layer-132.png" alt="">
-                            </div>
-                            <div class="slider__item">
-                                <img src="./img/Layer-128.png" alt="">
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
                 <div class="article sert">
                     <div class="content">
-                        <!-- <div class="article_left"> -->
                         <div class="article__text">
                             <div class="article__description">
                                 Ежедневно открывая входную дверь, вы должны испытывать удовольствие. А закрывая ее, быть уверенными в том, что ваш дом, семья
@@ -354,14 +412,202 @@
                                 <img src="./img/Layer-96.png" alt="">
                             </div>
                         </div>
-                        <!-- </div> -->
                     </div>
                 </div>
+                <div class="article furnitura">
+                    <div class="content">
+                        <div class="article__text">
+                            <div class="article__header">фурнитура</div>
+                            <div class="article__description">В нашем отделе дверной фурнитуры представлено более 200 моделей дверных ручек и соответствующей
+                                фурнитуры под них в наличии</div>
+                        </div>
+                        <div class="article__active">
+                            <div class="article__slider">
+                                <div class="slider__item">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                    <img src="./img/Layer_67.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="active__title">Выбрать фурнитуру? Легко!</div>
+                        <div class="active__text">Наши консультанты помогут вам подобрать из всего обилия дверной фурнитуры именно тот комплект, который
+                            будет соответствовать вашим нуждам</div>
+                    </div>
+                    <div class="furnitura__brand">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                        <img src="./img/Layer_75.png" alt="">
+                    </div>
+                </div>
+                <div class="article supreme">
+                    <div class="content">
+                        <div class="article__text">
+                            <div class="article__header">НАШИ ПРЕИМУЩЕСТВА</div>
+                        </div>
+                        <div class="article__active">
+                            <div class="slider__item long_time">
+                                <div class="slider__img"></div>
+                                <div class="slider__text">НА РЫНКЕ С 1998 ГОДА</div>
+                            </div>
+                            <div class="slider__item car">
+                                <div class="slider__img"></div>
+                                <div class="slider__text">НА РЫНКЕ С 1998 ГОДА</div>
+                            </div>
+                            <div class="slider__item best_items">
+                                <div class="slider__img"></div>
+                                <div class="slider__text">НА РЫНКЕ С 1998 ГОДА</div>
+                            </div>
+                            <div class="slider__item best_price">
+                                <div class="slider__img"></div>
+                                <div class="slider__text">НА РЫНКЕ С 1998 ГОДА</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article measurements">
+                    <div class="content">
+                        <div class="article__text">
+                            <div class="article__header">ЗАМЕРЫ В ГОРОДЕ
+                            </div>
+                            <div class="article__description">
+                                Магазин «МИР ДВЕРЕЙ» рекомендует доверять проведение замеров только специалистам. Технолог определит точные размеры, необходимость
+                                доработки проема, возможность использования различных крепежей в стены и т.д. На основании
+                                этих данных он определит возможность установки предварительно выбранной двери, либо определит
+                                другие подходящие к установке модели.
+                            </div>
+                        </div>
+                        <div class="article__active">
+                            <div class="active__title">МЫ ПРЕДЛАГАЕМ БЕСПЛАТНЫЕ ЗАМЕРЫ от специалистов по г.Ставрополю и г.Михайловску
+                                <span class="red_text"> ЗАПИШИСЬ УЖЕ СЕГОДНЯ !</span>
+                            </div>
+                            <div class="active_phones">
+                                <p> Межкомнатные двери +7 8652 95-68-68</p>
+                                <p> Металлические двери +7 8652 56-60-49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article contacts">
+                    <div class="content">
+                        <div class="article_left">
+                            <div class="article__text">
+                                <div class="article__header">контакты</div>
+                                <div class="article__description"></div>
+                            </div>
+                            <div class="article__active">
+                                <div class="active_text">
+                                    г. Ставрополь, просп. Кулакова, 6 +7 8652 95-68-68, +7 8652 56-60-49 Открыто: ежедневно, 9:00–18:00
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="article_right" src="https://yandex.ua/map-widget/v1/?um=constructor%3A80d68b2371b1196a654928958095e419a155753370b740ede43aa43a35e74bb8&amp;source=constructor"
+                            width="500" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <!-- 
+                    <!-- exomple of info_block
+                <div class="article popular">
+                        <div class="content">
+                            <div class="article__text">
+                                <div class="article__header"></div>
+                                <div class="article__description"></div>
+                            </div>
+                            <div class="article__active">
+                                
+                            </div>
+                        </div>
+                </div> -->
             </main>
         </div>
         <footer>
-            <div class="content">
-                text
+            <nav class="header__row header__menu">
+                <div class="content header__row_second">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">о нас</a>
+                    </li>
+                    <li>
+                        <a href="#">галерея</a>
+                    </li>
+                    <li>
+                        <a href="#">межкомнатные двери</a>
+                    </li>
+                    <li>
+                        <a href="#">металлические двери</a>
+                    </li>
+                    <li>
+                        <a href="#">фурнитура</a>
+                    </li>
+                    <li>
+                        <a href="#">преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#">контакты</a>
+                    </li>
+                    <!-- <button class="header__button_cal">обратный звонок</button> -->
+                </div>
+            </nav>
+            <div class="header__row">
+                <div class="content header__row_first">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__contacts-col">
+                        <p>
+                            <span class="red_text">Адрес: </span> г. Ставрополь, пр. Кулакова, 6</p>
+                        <p>
+                            <span class="red_text">Телефоны:</span>
+                        </p>
+                        <p>
+                            <span class="caps"> межкомнатные двери</span>
+                            <a href="tel:+7 8652 56-61-27">+7 8652 56-61-27</a>,
+                            <a href="tel:+7 8652 95-68-68"> +7 8652 95-68-68</a>
+                        </p>
+                        <p>
+                            <span class="caps">металлические двери</span>
+                            <a href="tel: +7 8652 56-60-49"> +7 8652 56-60-49</a>
+                        </p>
+
+                    </div>
+                    <div class="header__contacts-col">
+                        <p>
+                            <span class="red_text">E-mail:</span>
+                            <a href="mailto:stav_slkom@rambler.ru">stav_slkom@rambler.ru</a>
+                        </p>
+                        <p>
+                            <span class="red_text">Сайт:</span>
+                            <a href="http://mir-dverei.ru">mir-dverei.ru</a>
+                        </p>
+                        <p>
+                            <span class="red_text">Открыто:</span> ежедневно, 9:00–18:00
+                        </p>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
