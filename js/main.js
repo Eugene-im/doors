@@ -19,3 +19,13 @@ $(".furnitura .furnitura__brand").slick({
     slidesToShow: 15,
     slidesToScroll: 3
 });
+$('.galery .article__slider').magnificPopup({
+	delegate: '.slick-track a',
+	type: 'image',
+	gallery:{
+		enabled:true
+	},
+	zoom: {
+		enabled:true
+	}
+});
