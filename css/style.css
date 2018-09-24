@@ -1322,6 +1322,16 @@ header .slider__item {
   max-width: 216px;
   margin-bottom: 99px;
 }
+.supreme .slider__text:hover {
+  display: none;
+}
+.supreme .act {
+  display: none;
+  color: blue;
+}
+.supreme .slider__text:hover + .act {
+  display: block;
+}
 .supreme .slider__item {
   text-align: center;
 }
@@ -1515,7 +1525,8 @@ footer .second_row .content {
   }
 }
 @media (max-width: 1024px) {
-  .header__contacts-col, .header__menu {
+  .header__contacts-col,
+  .header__menu {
     display: none;
   }
 }

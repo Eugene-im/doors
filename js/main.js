@@ -29,3 +29,14 @@ $('.galery .article__slider').magnificPopup({
 		enabled:true
 	}
 });
+
+$('.room_doors .tab__slider').magnificPopup({
+	delegate: '.slick-track a',
+	type: 'image',
+	gallery:{
+		enabled:true
+	},
+	zoom: {
+		enabled:true
+	}
+});
