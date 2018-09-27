@@ -878,10 +878,11 @@ footer {
 
 header {
   min-height: 187px;
+  position: relative;
 }
 
 .header_top {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   background-color: #4e4646;
@@ -1143,6 +1144,7 @@ header .slider__item {
   z-index: 1;
   top: 130px;
   width: 100%;
+  background: #fff;
 }
 .metal-doors input[type="radio"] {
   position: absolute;
@@ -1449,6 +1451,88 @@ footer .second_row .content {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+#over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100vh;
+}
+#over form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 40%;
+  margin: auto;
+  background: #422a2a;
+  padding: 15px;
+}
+#over label {
+  color: #fff;
+}
+#over input,
+#over textarea,
+#over #close {
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#over #close {
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  font-size: 33px;
+}
+
+.popular .slider__item:hover,
+.metal-doors .slider__item:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.popular .slider__item,
+.metal-doors .slider__item {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+.popular .slider__item img,
+.metal-doors .slider__item img {
+  position: absolute;
+}
+.popular .front,
+.metal-doors .front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.popular .back,
+.metal-doors .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .galery .slick-slide {

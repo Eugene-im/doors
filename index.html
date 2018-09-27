@@ -13,7 +13,7 @@
         <div class="wrap">
             <header>
                 <div class="header_top">
-                    <div class="header__row">
+                    <div class="header__row hide_on_scroll" id="hide_on_scroll">
                         <div class="content header__row_first">
                             <div class="logo">
                                 <a href="#">
@@ -79,7 +79,7 @@
                             <li>
                                 <a href="#contacts">контакты</a>
                             </li>
-                            <button class="header__button_cal">обратный звонок</button>
+                            <button id="call_back" class="header__button_cal">обратный звонок</button>
                         </div>
                     </nav>
                 </div>
@@ -89,9 +89,13 @@
                             <img src="./img/2-layers.png" alt="">
                         </div>
                         <div class="item__text">
-                            <p><strong> новое поступление</strong></p>
+                            <p>
+                                <strong> новое поступление</strong>
+                            </p>
                             <p>стильных входных дверей</p>
-                            <p><span class="red_text">уже в продаже!</span> </p>
+                            <p>
+                                <span class="red_text">уже в продаже!</span>
+                            </p>
                             <a href="#metal-doors" class="button button_light">Узнать подробнее</a>
                         </div>
                     </div>
@@ -120,7 +124,7 @@
                 </div>
             </header>
             <main>
-                    <a name="about"></a>
+                <a name="about"></a>
                 <div class="article about">
                     <div class="content">
                         <div class="article_left">
@@ -252,39 +256,57 @@
                             <input id="room_tab-1" type="radio" name="tab" checked>
                             <div class="tab_mass tab__slider">
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                             </div>
 
                             <input id="room_tab-2" type="radio" name="tab">
                             <div class="tab_shpon tab__slider">
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                             </div>
 
                             <input id="room_tab-3" type="radio" name="tab">
                             <div class="tab_eco-shpon tab__slider">
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                                 <!-- <div class="slider__item"> -->
-                                    <a class="slider__item" href="./img/Layer_61.png"> <img src="./img/Layer_61.png" alt=""></a>
+                                <a class="slider__item" href="./img/Layer_61.png">
+                                    <img src="./img/Layer_61.png" alt="">
+                                </a>
                                 <!-- </div> -->
                             </div>
                         </div>
@@ -299,22 +321,28 @@
                         </div>
                         <div class="article__active">
                             <div class="slider__item">
-                                <img src="./img/Layer_135.png" alt="">
+                                <img src="./img/Layer_135.png" alt="" class="front">
+                                <img src="./img/Layer_137.png" alt="" class="back">
                             </div>
                             <div class="slider__item">
-                                <img src="./img/Layer_136.png" alt="">
+                                <img src="./img/Layer_136.png" alt="" class="front">
+                                <img src="./img/Layer_138.png" alt="" class="back">
                             </div>
                             <div class="slider__item">
-                                <img src="./img/Layer_137.png" alt="">
+                                <img src="./img/Layer_137.png" alt="" class="front">
+                                <img src="./img/Layer_141.png" alt="" class="back">
                             </div>
                             <div class="slider__item">
-                                <img src="./img/Layer_138.png" alt="">
+                                <img src="./img/Layer_138.png" alt="" class="front">
+                                <img src="./img/Layer_135.png" alt="" class="back">
                             </div>
                             <div class="slider__item">
-                                <img src="./img/Layer_138.png" alt="">
+                                <img src="./img/Layer_138.png" alt="" class="front">
+                                <img src="./img/Layer_136.png" alt="" class="back">
                             </div>
                             <div class="slider__item">
-                                <img src="./img/Layer_141.png" alt="">
+                                <img src="./img/Layer_141.png" alt="" class="front">
+                                <img src="./img/Layer_137.png" alt="" class="back">
                             </div>
                         </div>
                     </div>
@@ -341,47 +369,58 @@
                             <input id="metal_tab-1" type="radio" name="tab" checked>
                             <div class="active__item new-model">
                                 <div class="slider__item">
-                                    <img src="./img/Layer-115.png" alt="">
+                                    <img src="./img/Layer-115.png" alt="" class="front">
+                                    <img src="./img/Layer-115.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-116.png" alt="">
+                                    <img src="./img/Layer-116.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-118.png" alt="">
+                                    <img src="./img/Layer-118.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-129.png" alt="">
+                                    <img src="./img/Layer-129.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-132.png" alt="">
+                                    <img src="./img/Layer-132.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-128.png" alt="">
+                                    <img src="./img/Layer-128.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                             </div>
 
                             <input id="metal_tab-2" type="radio" name="tab">
-                            <div class="active__item popular-model">
+                            <div class="active__item new-model">
                                 <div class="slider__item">
-                                    <img src="./img/Layer-116.png" alt="">
+                                    <img src="./img/Layer-115.png" alt="" class="front">
+                                    <img src="./img/Layer-115.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-115.png" alt="">
+                                    <img src="./img/Layer-116.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-129.png" alt="">
+                                    <img src="./img/Layer-118.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-118.png" alt="">
+                                    <img src="./img/Layer-129.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-132.png" alt="">
+                                    <img src="./img/Layer-132.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                                 <div class="slider__item">
-                                    <img src="./img/Layer-128.png" alt="">
+                                    <img src="./img/Layer-128.png" alt="" class="front">
+                                    <img src="./img/Layer-116.png" alt="" class="back">
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
@@ -559,7 +598,8 @@
                                         г. Ставрополь, просп. Кулакова, 6
                                     </li>
                                     <li>
-                                        <a href="tel:+78652956868">+7 8652 95-68-68</a>, <a href="tel:+78652566049">+7 8652 56-60-49</a> 
+                                        <a href="tel:+78652956868">+7 8652 95-68-68</a>,
+                                        <a href="tel:+78652566049">+7 8652 56-60-49</a>
                                     </li>
                                     <li>
                                         Открыто: ежедневно, 9:00–18:00
@@ -622,20 +662,32 @@
                         </a>
                     </div>
                     <div class="footer__links">
-                        <a href="#">Политика конфиденциальности</a> <a href="#">Карта сайта</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Карта сайта</a>
                     </div>
                     <div class="footer__logo-creator">
-                        <a href="#"><img src="./img/Layer_57.png" alt=""></a>
+                        <a href="#">
+                            <img src="./img/Layer_57.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="over">
+        <form action="./php/mail.php" method="POST">
+            <div id="close">+</div>
+            <input id="name" type="text" placeholder="Введите Ваше Имя">
+            <input type="phone" placeholder="Введите Ваш телефон">
+            <textarea name="" id="text" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
 </body>
 
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/jquery.magnific-popup.min.js"></script>
 <script src="./js/slick.min.js"></script>
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
 
 </html>

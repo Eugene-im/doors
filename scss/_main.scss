@@ -75,10 +75,11 @@ footer {
 
 header {
   min-height: 187px;
+  position: relative;
 }
 
 .header_top {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   background-color: #4e4646;
@@ -311,6 +312,7 @@ header .slider__item {
     z-index: 1;
     top: 130px;
     width: 100%;
+    background: #fff;
   }
   input[type="radio"] {
     position: absolute;
@@ -463,7 +465,7 @@ header .slider__item {
     display: none;
     color: blue;
   }
-  .slider__text:hover+.act {
+  .slider__text:hover + .act {
     display: block;
   }
 
@@ -576,6 +578,73 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+}
+
+//over
+
+#over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100vh;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 40%;
+    margin: auto;
+    background: rgb(66, 42, 42);
+    padding: 15px;
+  }
+  label {
+    color: #fff;
+  }
+  input,
+  textarea,
+  #close {
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom:10px;
+  }
+  #close {
+    color: #fff;
+    transform: rotate(45deg);
+    align-self: flex-end;
+    cursor:pointer;
+    font-size: 33px;
+  }
+}
+
+//flipper{
+.popular,
+.metal-doors {
+  .slider__item:hover {
+    transform: rotateY(180deg);
+  }
+  .slider__item {
+    transition: all 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    img {
+      position: absolute;
+    }
+  }
+  .front {
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
   }
 }
 
