@@ -73,6 +73,17 @@ $('.room_doors .tab__slider').magnificPopup({
 	}
 });
 
+$('.sert .article__active').magnificPopup({
+	delegate: '.slider__item a',
+	type: 'image',
+	gallery:{
+		enabled:true
+	},
+	zoom: {
+		enabled:true
+	}
+});
+
 $("body").scroll(function() {
 
 	if ($(this).scrollTop()>0)

@@ -1638,6 +1638,11 @@ footer .second_row .content {
   display: flex !important;
 }
 
+#menu__button,
+.header__row.header__menu .logo_small {
+  display: none;
+}
+
 @media (max-width: 1224px) {
   .about .content,
   .sert .content,
@@ -1707,6 +1712,58 @@ footer .second_row .content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .header__row.header__menu .logo_small,
+  #menu__button {
+    display: block;
+  }
+
+  .metal-doors .article__active {
+    min-height: 865px;
+  }
+
+  .sert .article__active {
+    margin-top: 114px;
+  }
+
+  footer .footer__menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  footer .second_row .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 150px;
+    margin: 25px auto;
+  }
+
+  #over form {
+    width: 86%;
+  }
+
+  .header__slider .item__text {
+    top: 95px;
+    font-size: 27px;
+    line-height: normal;
+  }
+
+  .header__slider .item__text strong, .header__slider .item__text span {
+    font-size: 36px;
+  }
+
+  button, .button {
+    line-height: 58px;
   }
 }
 @media (max-width: 500px) {
@@ -1796,27 +1853,6 @@ footer .second_row .content {
 
   .measurements .article__active {
     margin: 231px auto 0;
-  }
-
-  footer .footer__menu {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  footer .second_row .content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    min-height: 150px;
-    margin: 25px auto;
-  }
-
-  #over form {
-    width: 86%;
   }
 }
 

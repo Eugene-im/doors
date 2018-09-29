@@ -746,6 +746,11 @@ footer {
   display: flex !important;
 }
 
+#menu__button,
+.header__row.header__menu .logo_small {
+  display: none;
+}
+
 // media
 @media (max-width: 1224px) {
   .about .content,
@@ -794,6 +799,40 @@ footer {
   .popular .article__active {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .header__row.header__menu .logo_small,
+  #menu__button {
+    display: block;
+  }
+  .metal-doors .article__active {
+    min-height: 865px;
+  }
+  .sert .article__active {
+    margin-top: 114px;
+  }
+  footer .footer__menu {
+    align-items: center;
+  }
+  footer .second_row .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    margin: 25px auto;
+  }
+  #over form {
+    width: 86%;
+  }
+  .header__slider .item__text{
+    top:95px;
+    font-size: 27px;
+    line-height: normal;
+  }
+  .header__slider .item__text strong, .header__slider .item__text span{
+    font-size: 36px;
+  }
+  button, .button{
+    line-height: 58px;
   }
 }
 
@@ -850,28 +889,16 @@ footer {
     padding-top: 307px;
     flex-direction: column;
   }
-  .supreme .slider__text{
+  .supreme .slider__text {
     margin: auto;
   }
-  .supreme .active__text{
+  .supreme .active__text {
     padding-top: 20px;
   }
-  .measurements{
+  .measurements {
     background-size: cover;
   }
-  .measurements .article__active{
+  .measurements .article__active {
     margin: 231px auto 0;
-  }
-  footer .footer__menu{
-      align-items: center;
-  }
-  footer .second_row .content{
-    align-items: center;
-    justify-content: space-between;
-    min-height: 150px;
-    margin: 25px auto;
-  }
-  #over form{
-    width: 86%;
   }
 }
