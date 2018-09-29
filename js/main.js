@@ -87,8 +87,23 @@ $("body").scroll(function() {
 
 
 $("#call_back").click(function(){
-	$("#over").css("display","flex")
-})
+	$("#over").toggleClass("showFlex");
+});
+
 $("#close").click(function(){
-	$("#over").hide()
+	$("#over").hide();
+});
+
+$("#over").click(function(){
+	$("#over").toggleClass("showFlex");
+});
+
+$("#menu__button").click(function(){
+	$(".line").toggleClass("cross");
+	$("header .header__row_second").toggleClass("showFlex");
+})
+
+$("header .header__row_second li").click(function(){
+	$(".line").toggleClass("cross");
+	$("header .header__row_second").toggleClass("showFlex");
 })

@@ -130,6 +130,44 @@ main .content {
   }
 }
 
+.header__row.header__menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+#menu__button {
+  width: 50px;
+  height: 36px;
+  cursor: pointer;
+  .line {
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background: #fff;
+  }
+  .cross:last-child {
+    margin-bottom: 0;
+  }
+  .cross:nth-child(2) {
+    display: none;
+  }
+  .cross:first-child {
+    transform: rotate(45deg);
+    margin-top: 31px;
+  }
+  .cross:last-child {
+    transform: rotate(-45deg);
+    margin-top: -15px;
+  }
+}
+
+.logo_small {
+  max-width: 150px;
+  width: 100%;
+  max-height: 35px;
+}
+
 header .slider__item {
   position: relative;
   z-index: 1;
@@ -186,7 +224,7 @@ header .slider__item {
   font-size: 54px;
   padding-left: 25px;
   padding-bottom: 25px;
-  font-weight: 300px;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -355,10 +393,10 @@ header .slider__item {
 .metal-doors {
   .article__active {
     flex-direction: column;
-    .active__item {
-      display: flex;
-      justify-content: space-between;
-    }
+  }
+  .active__item {
+    display: flex;
+    justify-content: space-between;
   }
   .slider__item {
     height: 385px;
@@ -613,13 +651,13 @@ footer {
   #close {
     padding: 5px;
     font-size: 18px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
   #close {
     color: #fff;
     transform: rotate(45deg);
     align-self: flex-end;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 33px;
   }
 }
@@ -704,6 +742,10 @@ footer {
   content: "";
 }
 
+.showFlex {
+  display: flex !important;
+}
+
 // media
 @media (max-width: 1224px) {
   .about .content,
@@ -723,10 +765,113 @@ footer {
   .header__menu {
     display: none;
   }
+  .header__row .content.header__row_second {
+    position: absolute;
+    top: 67px;
+    right: 0px;
+    display: none;
+    width: 220px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: start;
+    display: none;
+    background: #413939;
+  }
+  .header__row.header__menu {
+    padding: 15px;
+    justify-content: space-between;
+  }
+  #hide_on_scroll {
+    display: none !important;
+  }
+  .header__menu li {
+    padding: 15px;
+  }
+  #menu__button {
+    width: 40px;
+  }
+  .metal-doors .active__item,
+  .popular .article__active {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {
+  .metal-doors .article__tab,
+  .supreme .article__active,
+  footer .footer__menu,
+  footer .second_row .content,
   main .content {
     flex-direction: column;
+  }
+  .header__slider {
+    max-height: 50vh;
+  }
+  header .item__img img {
+    width: auto;
+  }
+  .about .article__title,
+  .article__header {
+    font-size: 41px;
+  }
+  .popular .article__active,
+  .galery .article__active,
+  .about .article__active {
+    padding-top: 90px;
+  }
+  .galery .slick-dotted.slick-slider {
+    margin-bottom: 55px;
+  }
+  .room_doors .article__active {
+    padding-top: 148px;
+    min-height: 354px;
+  }
+  .room_doors .article__tab li {
+    font-size: 16px;
+  }
+  .room_doors .article__tab label {
+    padding: 13px 15px;
+  }
+  .metal-doors .article__active {
+    min-height: 2410px;
+    padding-top: 62px;
+  }
+  .metal-doors .active__item {
+    top: 200px;
+  }
+  .metal-doors .article__tab li {
+    margin-bottom: 10px;
+  }
+  .sert {
+    padding-top: 130px;
+  }
+  .sert .article__active {
+    padding-top: 307px;
+    flex-direction: column;
+  }
+  .supreme .slider__text{
+    margin: auto;
+  }
+  .supreme .active__text{
+    padding-top: 20px;
+  }
+  .measurements{
+    background-size: cover;
+  }
+  .measurements .article__active{
+    margin: 231px auto 0;
+  }
+  footer .footer__menu{
+      align-items: center;
+  }
+  footer .second_row .content{
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    margin: 25px auto;
+  }
+  #over form{
+    width: 86%;
   }
 }
